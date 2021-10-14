@@ -1,10 +1,9 @@
-import './App.css';
+import {Form} from "./components/Form/Form";
+import './scss/default.scss';
 
 function App() {
   return (
-    <header>
-
-    </header>
+      <Form />
   );
 }
 
