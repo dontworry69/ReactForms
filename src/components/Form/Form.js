@@ -33,7 +33,9 @@ export function Form() {
         length !== target.value.length
           ? 1
           : 0;
-      if(target.value.length > 4){
+      if(target.value.length === 3){
+        target.selectionStart = target.value.length;
+      }else if(target.value.length >4) {
         target.value = target.value.slice(0,-1);
       }
       setUserCardData({ ...usersCardData, cardDate: target.value });
